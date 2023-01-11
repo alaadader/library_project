@@ -4,7 +4,7 @@ from model.Librarian_file import Librarian
 from model.BorrowingOrder_file import BorrowingOrder
 from model.Book_file import Book
 
-main_file = MainFile() #instance
+main_file = MainFile()#instance
 while True:
     # 0. Ask user to enter as a client or librarian
     user_type = input("Enter 'client' or 'librarian' else write exit:")
@@ -23,6 +23,12 @@ while True:
         print("All Books: ")
         for book in main_file.books_list:
             print(book.title)
+
+
+
+
+
+            ################################
 
         # Ask which book to borrow
         book_id = input("Enter the ID of the book you want to borrow: ")
